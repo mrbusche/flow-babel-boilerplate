@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+
+# Logs
+*.log*
+
+# Misc
+.DS_Store
+tmp/
+
+# Output files
+dist

@@ -1,0 +1,27 @@
+{
+  "name": "flow-babel-boilerplate",
+  "version": "0.1.0",
+  "description": "Minimalistic boilerplate with Flow and Babel",
+  "scripts": {
+    "build": "./node_modules/.bin/flow && babel src -d dist"
+  },
+  "keywords": [
+    "flow",
+    "babel",
+    "javascript",
+    "boilerplate",
+    "template"
+  ],
+  "author": {
+    "name": "Leandro Nunes",
+    "email": "dr1design@gmail.com",
+    "url": "https://lnfnunes.com.br"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.56.0"
+  }
+}
