@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Minimalistic boilerplate with Flow and Babel",
   "scripts": {
-    "build": "./node_modules/.bin/flow && babel src -d dist"
+    "flow": "flow",
+    "build": "flow && babel src -d dist"
   },
   "keywords": [
     "flow",
