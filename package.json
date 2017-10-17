@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Minimalistic boilerplate with Flow and Babel",
   "scripts": {
-    "flow": "flow",
-    "build": "flow && babel src -d dist"
+    "flow-check": "flow check",
+    "flow-coverage": "flow-coverage-report -i src/**/*.js -o coverage -t text -t html",
+    "test": "npm run flow-check && npm run flow-coverage",
+    "build": "npm test && babel src -d dist"
   },
   "keywords": [
     "flow",
@@ -23,6 +25,6 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.56.0"
+    "flow-coverage-report": "^0.3.0"
   }
 }
